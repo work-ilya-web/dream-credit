@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Подбор кредита</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div class="container">
+    
+    <header class="header">
+        <div class="header__top">
+            <div class="wrapper header__top-wrap flex">
+                <a href="#" class="header__logo">Dream credit</a>
+                <div class="header__mobile">
+                    <div class="header__content flex">
+                        <div class="header__currencies flex">
+                            <div class="header__currency flex">
+                                <div class="header__currency-icon">$</div>
+                                <div class="header__currency-name">USD</div>
+                                <div class="header__currency-value">71.2215</div>
+                                <div class="header__currency-arrow img-contain">
+                                    <img src="images/icons/arrow-rgeen.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="header__currency flex">
+                                <div class="header__currency-icon">€</div>
+                                <div class="header__currency-name">EUR</div>
+                                <div class="header__currency-value">80.502</div>
+                                <div class="header__currency-arrow img-contain">
+                                    <img src="images/icons/arrow-orange.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__city flex">
+                            <div class="header__city-icon img-contain">
+                                <img src="images/icons/location.svg" alt="">
+                            </div>
+                            <div class="header__city-caption">Ваш город:</div>
+                            <div class="header__city-name city--js">Москва</div>
+                        </div>
+                        <div class="header__contacts flex">
+                            <div class="header__contacts-desc">По всем вопросам обращаться по телефону</div>
+                            <a href="tel:+7 499 113 19 67" class="header__tel">+7 499 113 19 67</a>
+                        </div>
+                        <form action="#" class="header__search">
+                            <div class="header__search-btn flex-center">
+                                <img src="images/icons/search.svg" alt="">
+                            </div>
+                            <input type="text" name="text" class="header__search-field field" placeholder="Поиск">
+                            <button class="header__search-button flex-center">
+                                <img src="images/icons/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="wrapper">
+                <nav class="menu">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="#">Кредиты</a>
+                            <ul>
+                                <li><a href="#">На карту</a></li>
+                                <li><a href="#">Наличными</a></li>
+                                <li><a href="#">Без справок</a></li>
+                                <li><a href="#">Без отказа</a></li>
+                                <li><a href="#">Пенсионерам</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Микрозаймы</a>
+                            <ul>
+                                <li><a href="#">На карту</a></li>
+                                <li><a href="#">Наличными</a></li>
+                                <li><a href="#">Без справок</a></li>
+                                <li><a href="#">Без отказа</a></li>
+                                <li><a href="#">Пенсионерам</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Кредитные карты</a>
+                            <ul>
+                                <li><a href="#">На карту</a></li>
+                                <li><a href="#">Наличными</a></li>
+                                <li><a href="#">Без справок</a></li>
+                                <li><a href="#">Без отказа</a></li>
+                                <li><a href="#">Пенсионерам</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Кредитный калькулятор</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="promo promo_child">
+        <div class="wrapper promo__wrap">
+            <div class="promo__top">
+                <div class="promo__title">Подбор кредита</div>
+                <div class="promo__subtitle">Мы собрали у себя множество вариантов различных кредитов, чтобы вы могли сравнить их онлайн и подобрать то, что подходит именно вам. Воспользуйтесь нашим калькулятором и получите список возмжных вариантов.</div>
+            </div>
+            <div class="promo__box">
+                <div class="mortgage promo__form">
+                    <div class="mortgage-form promo__form-row flex">
+                        <div class="mortgage-form__row--js promo__form-coll">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Сумма</div>
+                                    <div>
+                                        <input type="text" class="mortgage-form__input total_amount_selection promo__form-value" data-slider="total_amount" name="total_amount">
+                                        <span class="promo-icon">₽</span>
+                                    </div>
+                            </div>
+                            <div class="mortgage-form__slider">
+                                <input type="text" class="js-range-slider irs-hidden-input" id="total_amount_selection" data-min="0" data-max="5000000" data-from="100000" data-step="50000" tabindex="-1" readonly="">
+                            </div>
+                        </div>
+                        <div class="mortgage-form__row--deadlines promo__form-coll promo__form-coll_time">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Срок</div>
+                                <div>
+                                    <input type="text" class="mortgage-form__input period promo__form-value" data-slider="period">
+                                    <span class="promo-icon">год</span>
+                                </div>
+                            </div>
+                            <div class="mortgage-form__slider">
+                                <input type="text" class="js-range-slider irs-hidden-input" id="period" data-min="1" data-max="50" data-from="1" data-step="1" tabindex="-1" readonly="">
+                            </div>
+                        </div>
+                        <div class="promo__form-coll promo__form-coll_banks">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Банки</div>
+                            </div>
+                            <div class="promo__select">
+                                <div class="promo__select-top flex">
+                                    <div class="promo__select-title">Тинькофф</div>
+                                    <div class="promo__select-arrow"></div>
+                                </div>
+                                <div class="promo__select-content">
+                                    <label class="promo__select-checkbox">
+                                        <input type="checkbox" name="bank" value="Тинькофф">
+                                        <div class="promo__select-name">Тинькофф</div>
+                                        <div class="promo__select-icon">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                    <label class="promo__select-checkbox">
+                                        <input type="checkbox" name="bank" value="Zaymer">
+                                        <div class="promo__select-name">Zaymer</div>
+                                        <div class="promo__select-icon">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                    <label class="promo__select-checkbox">
+                                        <input type="checkbox" name="bank" value="SmartCredit">
+                                        <div class="promo__select-name">SmartCredit</div>
+                                        <div class="promo__select-icon">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                    <label class="promo__select-checkbox">
+                                        <input type="checkbox" name="bank" value="Moneyman">
+                                        <div class="promo__select-name">Moneyman</div>
+                                        <div class="promo__select-icon">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                    <label class="promo__select-checkbox">
+                                        <input type="checkbox" name="bank" value="Восточный банк">
+                                        <div class="promo__select-name">Восточный банк</div>
+                                        <div class="promo__select-icon">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="promo__form-coll promo__form-coll_cities">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Город</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Москва</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="1">Москва</div>
+                                    <div class="select-options__value" data-value="2">Барнаул</div>
+                                    <div class="select-options__value" data-value="3">Санкт Петербург</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="city" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo__form-selected"></div>
+                    <div class="promo__form-row flex">
+                        <div class="promo__form-coll promo__form-coll_hidden">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Цель кредита</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Любая</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="0">Любая</div>
+                                    <div class="select-options__value" data-value="1">Дом</div>
+                                    <div class="select-options__value" data-value="2">Машина</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="type" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__form-coll promo__form-coll_hidden">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Залог</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Неважно</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="0">Неважно</div>
+                                    <div class="select-options__value" data-value="1">Дом</div>
+                                    <div class="select-options__value" data-value="2">Машина</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="deposit" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__form-coll promo__form-coll_hidden">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Поручительство</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Неважно</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="0">Неважно</div>
+                                    <div class="select-options__value" data-value="1">Есть</div>
+                                    <div class="select-options__value" data-value="2">Нет</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="guarantee" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__form-coll promo__form-coll_hidden">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Подтверждение дохода</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Любое</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="0">Любое</div>
+                                    <div class="select-options__value" data-value="1">Есть</div>
+                                    <div class="select-options__value" data-value="2">Нет</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="money_proof" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__form-coll promo__form-coll_hidden">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Форма выдачи</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Любая</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="0">Любая</div>
+                                    <div class="select-options__value" data-value="1">Наличными</div>
+                                    <div class="select-options__value" data-value="2">На карту</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="money_type" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__form-coll promo__form-coll_hidden">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Срок рассмотрения заявки</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Любой</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="0">Любой</div>
+                                    <div class="select-options__value" data-value="1">Быстро</div>
+                                    <div class="select-options__value" data-value="2">Долго</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="term" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__form-coll promo__form-coll_hidden">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Категория заемщика</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Неважно</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="0">Неважно</div>
+                                    <div class="select-options__value" data-value="1">Есть</div>
+                                    <div class="select-options__value" data-value="2">Нет</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="borrower" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__form-coll promo__form-coll_hidden">
+                            <div class="promo__form-top flex">
+                                <div class="promo__form-caption">Страхование кредита</div>
+                            </div>
+                            <div class="select">
+                                <div class="select-title">
+                                    <div class="select-title__arrow"></div>
+                                    <div class="select-title__value">Неважно</div>
+                                </div>
+                                <div class="select-options">
+                                    <div class="select-options__value" data-value="0">Неважно</div>
+                                    <div class="select-options__value" data-value="1">Есть</div>
+                                    <div class="select-options__value" data-value="2">Нет</div>
+                                    <input type="hidden" class="form_data" data-filter-rule="equal" name="insurance" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="getCredits" class="btn-results scrollto promo__form-btn btn" data-to="credit-table">
+                        <span>Подобрать кредит</span>
+                        <span>Подобрать кредит</span>
+                    </button>
+                </div>
+                <a href="javascript:void(0)" class="promo__hidden flex-center">
+                    <img src="images/icons/hidden-icon.svg" alt="">
+                    <span>Все параметры</span>
+                    <span>свернуть</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-schedule">
+        <div class="wrapper">
+        <div class="calc-credit" style="display: none;">
+
+        </div>
+        </div>
+    </section>
+
+    <section class="result">
+        <div class="wrapper">
+            <div class="result__top flex">
+                <div class="result__top-left flex">
+                    <a href="#" id="sort" data-direction="asc" class="sort-direction flex-center">
+                        <img src="images/icons/sort-ascending.svg" alt="">
+                    </a>
+                    <div class="result__top-select">
+                        <div class="select">
+                            <div class="select-title">
+                                <div class="select-title__arrow"></div>
+                                <div class="select-title__value">По популярности</div>
+                            </div>
+                            <div class="select-options">
+                                <div class="select-options__value" data-value="rating">По популярности</div>
+                                <div class="select-options__value" data-value="percent">По проценту</div>
+                                <div class="select-options__value" data-value="rate">По ставке</div>
+                                <input type="hidden" id="sorting_field" name="sorting_field" value="rating">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result__top-right" id="fast_filter">
+                    <form action="#" class="result__top-form flex">
+                        <div class="result__top-slick swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="best">
+                                        <div class="result__top-item">Лучшие</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="zero">
+                                        <div class="result__top-item">Под 0%</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="bad_history">
+                                        <div class="result__top-item">С плохой КИ</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="no_docs">
+                                        <div class="result__top-item">Без справок</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="calculator">
+                                        <div class="result__top-item">Калькулятор</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="best">
+                                        <div class="result__top-item">Лучшие</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="zero">
+                                        <div class="result__top-item">Под 0%</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="bad_history">
+                                        <div class="result__top-item">С плохой КИ</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="no_docs">
+                                        <div class="result__top-item">Без справок</div>
+                                    </label>
+                                </div>
+                                <div class="result__top-slide swiper-slide">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="checkbox" data-filter-rule="equal" data-name="calculator">
+                                        <div class="result__top-item">Калькулятор</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrows flex">
+                            <div class="arrow arrow_prew">
+                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.4257 12.5263L0.881658 6.98226C0.723528 6.82413 0.636719 6.61317 0.636719 6.38371C0.636719 6.15876 0.723528 5.94792 0.881658 5.78979L6.4257 0.245626C6.75332 -0.0818756 7.28654 -0.0818756 7.61392 0.245626L8.11754 0.748993C8.27554 0.907123 8.36248 1.11809 8.36248 1.34317C8.36248 1.56812 8.27554 1.78633 8.11754 1.94434L4.88299 5.18587L15.1591 5.18587C15.6222 5.18587 16 5.5486 16 6.01175L16 6.72371C16 7.18685 15.6222 7.5863 15.1591 7.5863L4.84652 7.5863L8.11754 10.8462C8.27554 11.0042 8.36248 11.2096 8.36248 11.4346C8.36248 11.6597 8.27554 11.8676 8.11754 12.0258L7.61392 12.5277C7.28642 12.8553 6.75332 12.8541 6.4257 12.5263Z" fill="#1465DF"/>
+                                </svg>
+                            </div>
+                            <div class="arrow arrow_next">
+                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.5743 12.5263L15.1183 6.98226C15.2765 6.82413 15.3633 6.61317 15.3633 6.38371C15.3633 6.15876 15.2765 5.94792 15.1183 5.78979L9.5743 0.245626C9.24668 -0.0818756 8.71346 -0.0818756 8.38608 0.245626L7.88246 0.748993C7.72446 0.907123 7.63752 1.11809 7.63752 1.34317C7.63752 1.56812 7.72446 1.78633 7.88246 1.94434L11.117 5.18587L0.840936 5.18587C0.377788 5.18587 -4.98336e-05 5.5486 -4.98538e-05 6.01175L-4.9885e-05 6.72371C-4.99052e-05 7.18685 0.377788 7.5863 0.840936 7.5863L11.1535 7.5863L7.88246 10.8462C7.72446 11.0042 7.63752 11.2096 7.63752 11.4346C7.63752 11.6597 7.72446 11.8676 7.88246 12.0258L8.38608 12.5277C8.71358 12.8553 9.24668 12.8541 9.5743 12.5263Z" fill="#3077E3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="result__table">
+                <div class="result__thead flex">
+                    <div class="result__th">Банк</div>
+                    <div class="result__th">Ставка</div>
+                    <div class="result__thead-box flex">
+                        <div class="result__th">Сумма</div>
+                        <div class="result__th">документы</div>
+                        <div class="result__th">требования</div>
+                    </div>
+                    <div class="result__th">заявка</div>
+                </div>
+                <div class="result__tbody" id="result_banks"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers-month">
+        <div class="wrapper">
+            <div class="top flex">
+                <div class="title">Предложения месяца</div>
+                <div class="arrows flex">
+                    <div class="arrow arrow_prew">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.4257 12.5263L0.881658 6.98226C0.723528 6.82413 0.636719 6.61317 0.636719 6.38371C0.636719 6.15876 0.723528 5.94792 0.881658 5.78979L6.4257 0.245626C6.75332 -0.0818756 7.28654 -0.0818756 7.61392 0.245626L8.11754 0.748993C8.27554 0.907123 8.36248 1.11809 8.36248 1.34317C8.36248 1.56812 8.27554 1.78633 8.11754 1.94434L4.88299 5.18587L15.1591 5.18587C15.6222 5.18587 16 5.5486 16 6.01175L16 6.72371C16 7.18685 15.6222 7.5863 15.1591 7.5863L4.84652 7.5863L8.11754 10.8462C8.27554 11.0042 8.36248 11.2096 8.36248 11.4346C8.36248 11.6597 8.27554 11.8676 8.11754 12.0258L7.61392 12.5277C7.28642 12.8553 6.75332 12.8541 6.4257 12.5263Z" fill="#1465DF"/>
+                        </svg>
+                    </div>
+                    <div class="arrow arrow_next">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5743 12.5263L15.1183 6.98226C15.2765 6.82413 15.3633 6.61317 15.3633 6.38371C15.3633 6.15876 15.2765 5.94792 15.1183 5.78979L9.5743 0.245626C9.24668 -0.0818756 8.71346 -0.0818756 8.38608 0.245626L7.88246 0.748993C7.72446 0.907123 7.63752 1.11809 7.63752 1.34317C7.63752 1.56812 7.72446 1.78633 7.88246 1.94434L11.117 5.18587L0.840936 5.18587C0.377788 5.18587 -4.98336e-05 5.5486 -4.98538e-05 6.01175L-4.9885e-05 6.72371C-4.99052e-05 7.18685 0.377788 7.5863 0.840936 7.5863L11.1535 7.5863L7.88246 10.8462C7.72446 11.0042 7.63752 11.2096 7.63752 11.4346C7.63752 11.6597 7.72446 11.8676 7.88246 12.0258L8.38608 12.5277C8.71358 12.8553 9.24668 12.8541 9.5743 12.5263Z" fill="#3077E3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div id="offers-month__body" class="offers-month__body">
+                <div class="offers-month__slick swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-1.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 7%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-2.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 9%</div>
+                                <div class="offers-month__desc">Кредит наличными</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-3.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 7%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-4.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 7%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-5.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 7%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-6.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 10,5%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-1.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 7%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-2.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 9%</div>
+                                <div class="offers-month__desc">Кредит наличными</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-3.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 7%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-4.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 7%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-5.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 7%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="offers-month__slide swiper-slide">
+                            <div class="offers-month__item">
+                                <div class="offers-month__img flex-center">
+                                    <img src="images/offers-month/img-6.png" alt="">
+                                </div>
+                                <div class="offers-month__value">ставка от 10,5%</div>
+                                <div class="offers-month__desc">Потребительский кредит</div>
+                                <a href="#" class="offers-month__btn">подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-reviews main-reviews_item">
+        <div class="wrapper">
+            <div class="top flex">
+                <div class="title">Отзывы о кредитах</div>
+                <div class="top__box flex">
+                    <a href="#" class="main-reviews__btn flex review--js">Новый отзыв <span>+</span></a>
+                    <div class="arrows flex">
+                        <div class="arrow arrow_prew">
+                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.4257 12.5263L0.881658 6.98226C0.723528 6.82413 0.636719 6.61317 0.636719 6.38371C0.636719 6.15876 0.723528 5.94792 0.881658 5.78979L6.4257 0.245626C6.75332 -0.0818756 7.28654 -0.0818756 7.61392 0.245626L8.11754 0.748993C8.27554 0.907123 8.36248 1.11809 8.36248 1.34317C8.36248 1.56812 8.27554 1.78633 8.11754 1.94434L4.88299 5.18587L15.1591 5.18587C15.6222 5.18587 16 5.5486 16 6.01175L16 6.72371C16 7.18685 15.6222 7.5863 15.1591 7.5863L4.84652 7.5863L8.11754 10.8462C8.27554 11.0042 8.36248 11.2096 8.36248 11.4346C8.36248 11.6597 8.27554 11.8676 8.11754 12.0258L7.61392 12.5277C7.28642 12.8553 6.75332 12.8541 6.4257 12.5263Z" fill="#1465DF"/>
+                            </svg>
+                        </div>
+                        <div class="arrow arrow_next">
+                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5743 12.5263L15.1183 6.98226C15.2765 6.82413 15.3633 6.61317 15.3633 6.38371C15.3633 6.15876 15.2765 5.94792 15.1183 5.78979L9.5743 0.245626C9.24668 -0.0818756 8.71346 -0.0818756 8.38608 0.245626L7.88246 0.748993C7.72446 0.907123 7.63752 1.11809 7.63752 1.34317C7.63752 1.56812 7.72446 1.78633 7.88246 1.94434L11.117 5.18587L0.840936 5.18587C0.377788 5.18587 -4.98336e-05 5.5486 -4.98538e-05 6.01175L-4.9885e-05 6.72371C-4.99052e-05 7.18685 0.377788 7.5863 0.840936 7.5863L11.1535 7.5863L7.88246 10.8462C7.72446 11.0042 7.63752 11.2096 7.63752 11.4346C7.63752 11.6597 7.72446 11.8676 7.88246 12.0258L8.38608 12.5277C8.71358 12.8553 9.24668 12.8541 9.5743 12.5263Z" fill="#3077E3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-reviews__body" class="main-reviews__body">
+                <div class="main-reviews__slick swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="main-reviews__slide swiper-slide">
+                            <div class="main-reviews__item">
+                                <div class="main-reviews__top flex">
+                                    <div class="main-reviews__caption">БыстроЗайм</div>
+                                    <div class="main-reviews__date">12.01.2020</div>
+                                </div>
+                                <div class="main-reviews__text">Сломалась стиралка. С двумя детьми и мужем – это катастрофа. «БыстроЗайм» начислил деньги за 8 минут! Второй раз пеня уже начисляется, так что вряд ли возьму. Но это однозначное спасибо за оперативность и честную игру!</div>
+                                <div class="main-reviews__bottom flex">
+                                    <div class="main-reviews__name">Виктория</div>
+                                    <div class="main-reviews__city">г. Москва</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-reviews__slide swiper-slide">
+                            <div class="main-reviews__item">
+                                <div class="main-reviews__top flex">
+                                    <div class="main-reviews__caption">Finspin</div>
+                                    <div class="main-reviews__date">16.01.2020</div>
+                                </div>
+                                <div class="main-reviews__text">У меня нормально прошло,взял потом добирал,выбрал всю сумму 7 тыс.проценты были, как первый раз заплатил 8900.Если бы так и было можно брать за месяц это немного.С отдаванием проблем небыло через личный кабинет картой заплатил, поделал скриншоты на всякий случай.</div>
+                                <div class="main-reviews__bottom flex">
+                                    <div class="main-reviews__name">Евгений</div>
+                                    <div class="main-reviews__city">г. Пермь</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-reviews__slide swiper-slide">
+                            <div class="main-reviews__item">
+                                <div class="main-reviews__top flex">
+                                    <div class="main-reviews__caption">Smart Credit</div>
+                                    <div class="main-reviews__date">27.01.2020</div>
+                                </div>
+                                <div class="main-reviews__text">Smart Credit отличная компания! Очень нужны были деньги, быстро рассмотрели заявку, потом мне позвонила оператор все рассказала, ответила на мои вопросы. Деньги сразу перечислили на мою карту, удобно. Однозначно рекомендую</div>
+                                <div class="main-reviews__bottom flex">
+                                    <div class="main-reviews__name">Олег</div>
+                                    <div class="main-reviews__city">г. Москва</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-reviews__slide swiper-slide">
+                            <div class="main-reviews__item">
+                                <div class="main-reviews__top flex">
+                                    <div class="main-reviews__caption">БыстроЗайм</div>
+                                    <div class="main-reviews__date">12.01.2020</div>
+                                </div>
+                                <div class="main-reviews__text">Сломалась стиралка. С двумя детьми и мужем – это катастрофа. «БыстроЗайм» начислил деньги за 8 минут! Второй раз пеня уже начисляется, так что вряд ли возьму. Но это однозначное спасибо за оперативность и честную игру!</div>
+                                <div class="main-reviews__bottom flex">
+                                    <div class="main-reviews__name">Виктория</div>
+                                    <div class="main-reviews__city">г. Москва</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-reviews__slide swiper-slide">
+                            <div class="main-reviews__item">
+                                <div class="main-reviews__top flex">
+                                    <div class="main-reviews__caption">Finspin</div>
+                                    <div class="main-reviews__date">16.01.2020</div>
+                                </div>
+                                <div class="main-reviews__text">У меня нормально прошло,взял потом добирал,выбрал всю сумму 7 тыс.проценты были, как первый раз заплатил 8900.Если бы так и было можно брать за месяц это немного.С отдаванием проблем небыло через личный кабинет картой заплатил, поделал скриншоты на всякий случай.</div>
+                                <div class="main-reviews__bottom flex">
+                                    <div class="main-reviews__name">Евгений</div>
+                                    <div class="main-reviews__city">г. Пермь</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-reviews__slide swiper-slide">
+                            <div class="main-reviews__item">
+                                <div class="main-reviews__top flex">
+                                    <div class="main-reviews__caption">Smart Credit</div>
+                                    <div class="main-reviews__date">27.01.2020</div>
+                                </div>
+                                <div class="main-reviews__text">Smart Credit отличная компания! Очень нужны были деньги, быстро рассмотрели заявку, потом мне позвонила оператор все рассказала, ответила на мои вопросы. Деньги сразу перечислили на мою карту, удобно. Однозначно рекомендую</div>
+                                <div class="main-reviews__bottom flex">
+                                    <div class="main-reviews__name">Олег</div>
+                                    <div class="main-reviews__city">г. Москва</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="article article_item">
+        <div class="wrapper">
+            <div class="article__body">
+                <div class="top">
+                    <div class="title">Как и где оформить кредит?</div>
+                </div>
+                <div class="article__text">
+                    <p>Взять кредит по паспорту в Москве можно при условии, что заемщик имеет положительную кредитную историю, участвует в зарплатном проекте банка или относится к категории постоянных и надежных клиентов. Заем по паспортным данным выгоден в условиях срочной потребности в деньгах, так как отсутствует необходимость собирать множество справок и искать поручителей, тратя на это много времени.</p>
+                    <p>Сейчас почти все банковские учреждения предлагают программы онлайн. Суть услуги: подача заявки без посещения отделения через официальный сайт компании. Ответ по запросу приходит также удаленно посредством СМС-сообщения или электронным письмом.</p>
+                    <p>Если заявка одобрена, заемщик может сразу прийти в офис для подписания договора.</p>
+                    <p>В Сбербанке можно взять до 5 000 000 рублей на 5 лет и под 11,9% годовых. Газпромбанк предлагает 3 000 000 под 9% годовых на 7 лет. В Тинькофф дают срочно по паспорту до 2 000 000 под 12% на 3 года.</p>
+                    <p>Кредитка – удобный продукт, с помощью которого можно расплачиваться за товары и услуги. Заемщику предоставляется конкретный лимит, в пределах которого он вправе использовать заемные средства.</p>
+                    <p>Некоторые банки предлагают доставить кредитные карты домой. Такую услугу предлагает Тинькофф. Условия:</p>
+                    <ul>
+                        <li>процентная ставка – 12% годовых;</li>
+                        <li>беспроцентный период – 55 дней;</li>
+                        <li>лимит – 300 000 рублей.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="article__body">
+                <div class="top">
+                    <div class="title">Как подобрать кредит?</div>
+                </div>
+                <div class="article__text">
+                    <p>Для того, чтобы не искать кредитные продукты на сайтах разных банков и тратить на это кучу времени, лучше найти эту информацию о всех кредитных предложениях на одном ресурсе.</p>
+                    <p>Без потребительских кредитов сложно представить нашу жизнь. Практически каждый взрослый человек в своей жизни брал либо потребительский, либо ипотечный, либо автокредит, а зачастую становился получателем сразу всех этих видов займов. Благодаря потребительскому кредиту можно уже сегодня купить то, на что нужно копить долгие месяцы или годы. И если потребительский кредит или автокредит человек обычно берет для какой -то конкретной покупки, то микрозаймы обычно получают для того, чтобы закрыть «кассовый разрыв», когда денег не хватает до зарплаты, нужно заплатить за услуги ЖКХ или оплатить все тот же потребительский кредит. Например, такой микрокредит можно оформить онлайн не выходя из дома на Zaymer.</p>
+                    <p>Предложений по получению потребительских, ипотечных кредитов, автокредитов существует великое множество. И чтобы не искать самое лучшее и самое выгодное, лучше сразу обращаться к сервисам, где можно узнать условия кредитов и займов в самых разных кредитных учреждениях.</p>
+                    <p>Здесь представлены десятки вариантов получения займов и условия по ним: максимальная сумма, срок, процентная ставка. Ресурс Dream Credit – это не микрофинансовая организация, и не банк, а ресурс, где можно почерпнуть полезную информацию о кредитах и микрозаймах. Фактически это агрегатор самых выгодных и удобных предложений микрофинансовых организаций по получению займов.</p>
+                    <p>Например, через Dream Credit есть возможность оформить кредит Lime Zaim. Здесь деньги по паспорту можно получить всего за пару минут, отправив заявку. Даже не нужно выходить из дома. Условия просты и понятны, клиент изначально знает, сколько нужно будет переплатить по микрозайму. А быстрота получения кредита и простота – это то, что сегодня так нужно многим россиянам. Ведь в условиях пандемии коронавируса многие лишились постоянного заработка, у многих сократили зарплату. А нужно платить коммунальные платежи, нужно на что-то покупать продукты. До того, как уволенный (сокращенный) найдет новую работу, ему нужно будет как-то себя финансово обеспечивать. В таком случае единственный выход – получение микрозайма. И ресурс Dream Credit поможет в выборе оптимального варианта получения займов.</p>
+                </div>
+            </div>
+            <div class="article__body">
+                <div class="top">
+                    <div class="title">Способы оформления кредита</div>
+                </div>
+                <div class="article__text">
+                    <p>Существует несколько способов и форм получения кредита наличными.</p>
+                    <p>Во-первых, он может быть получен путем использования продуктов банков, относящихся к экспресс-кредитованию, когда заявка рассматривается в считанные часы или даже минуты. На практике это самый дорогой способ привлечения займа, что объясняется повышенным риском для кредитной организации. Цена такого кредита составляет от 25% годовых и значительно выше.</p>
+                    <p>При экспресс-кредитовании требуется минимум документов, как правило паспорт заемщика и еще один документ, такой как водительское удостоверение, загранпаспорт, пенсионное удостоверение или что-либо еще. Подобный кредит наличными часто называется в банках «Моментальным кредитом», «Кредитом по двум документам», «Кредитом наличными без справок и документов» и т. п.</p>
+                    <p>Во-вторых, клиент может обратиться в банк с классической кредитной заявкой на кредит наличными. Для этого чаще всего необходимы дополнительные документы, подтверждающие доход заемщика, такие как форма 2НДФЛ или справка по форме банка. В ряде случаев финансовые учреждения готовы оценивать кредитоспособность заемщика при помощи альтернативных документов, например банковской выписки по счету карты, на которую начисляется зарплата. Кроме того, необходимо, чтобы клиент соответствовал требованиям кредитной организации по возрасту, непрерывному стажу работы на последнем месте и т. д.</p>
+                    <p>Как правило, срок рассмотрения кредитной заявки - от трех дней. Преимущество данной схемы в том, что в результате процент по такому кредиту ниже. На начало 2012 года ставка составляет приблизительно от 16%. Минимальный срок предоставления такого кредита чаще всего равен шести месяцам, однако заемщик по закону имеет право в любое время полностью погасить задолженность, уведомив банк минимум за 30 дней.</p>
+                    <p>Кредит наличными может выдаваться как без залога, так и под залог того или иного имущества. Процентные ставки обеспеченного кредита существенно ниже. Кроме того, для того чтобы получить ссуду на большую сумму, заемщик может привлечь созаемщиков или поручителей. В этом случае банк, как правило, учитывает суммарный подтвержденный доход участников сделки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collections">
+        <div class="wrapper">
+            <div class="top">
+                <div class="title">Популярные подборки</div>
+            </div>
+            <div class="collections__row flex">
+                <div class="collections__coll">
+                    <div class="collections__caption">По суммам</div>
+                    <div class="collections__box">
+                        <ul>
+                            <li><a href="#">На 100 000 рублей</a></li>
+                            <li><a href="#">На 1 000 000 рублей</a></li>
+                            <li><a href="#">На 500 000 рублей</a></li>
+                            <li><a href="#">На 10 000 рублей</a></li>
+                            <li><a href="#">На 35 000 рублей</a></li>
+                            <li><a href="#">На 100 000 рублей</a></li>
+                            <li><a href="#">На 1 000 000 рублей</a></li>
+                            <li><a href="#">На 500 000 рублей</a></li>
+                            <li><a href="#">На 10 000 рублей</a></li>
+                            <li><a href="#">На 35 000 рублей</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="collections__btn">
+                            <span>Показать всё</span>
+                            <span>Скрыть</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="collections__coll">
+                    <div class="collections__caption">По срокам</div>
+                    <div class="collections__box">
+                        <ul>
+                            <li><a href="#">На 1 год</a></li>
+                            <li><a href="#">На 5 лет</a></li>
+                            <li><a href="#">На 6 месяцев</a></li>
+                            <li><a href="#">На 2 года</a></li>
+                            <li><a href="#">На 10 лет</a></li>
+                            <li><a href="#">На 1 год</a></li>
+                            <li><a href="#">На 5 лет</a></li>
+                            <li><a href="#">На 6 месяцев</a></li>
+                            <li><a href="#">На 2 года</a></li>
+                            <li><a href="#">На 10 лет</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="collections__btn">
+                            <span>Показать всё</span>
+                            <span>Скрыть</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="collections__coll">
+                    <div class="collections__caption">По целям</div>
+                    <div class="collections__box">
+                        <ul>
+                            <li><a href="#">Рефинансирование</a></li>
+                            <li><a href="#">На бытовую технику</a></li>
+                            <li><a href="#">На смартфон</a></li>
+                            <li><a href="#">На Iphone</a></li>
+                            <li><a href="#">На мебель</a></li>
+                            <li><a href="#">Рефинансирование</a></li>
+                            <li><a href="#">На бытовую технику</a></li>
+                            <li><a href="#">На смартфон</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="collections__btn">
+                            <span>Показать всё</span>
+                            <span>Скрыть</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="collections__coll">
+                    <div class="collections__caption">По процентам</div>
+                    <div class="collections__box">
+                        <ul>
+                            <li><a href="#">Пол низкий процент</a></li>
+                            <li><a href="#">Под 5%</a></li>
+                            <li><a href="#">Под 10%</a></li>
+                            <li><a href="#">Под 2%</a></li>
+                            <li><a href="#">Под 7,5%</a></li>
+                            <li><a href="#">Пол низкий процент</a></li>
+                            <li><a href="#">Под 5%</a></li>
+                            <li><a href="#">Под 10%</a></li>
+                            <li><a href="#">Под 2%</a></li>
+                            <li><a href="#">Под 7,5%</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="collections__btn">
+                            <span>Показать всё</span>
+                            <span>Скрыть</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="collections__coll">
+                    <div class="collections__caption">Особые условия</div>
+                    <div class="collections__box">
+                        <ul>
+                            <li><a href="#">Без страховки</a></li>
+                            <li><a href="#">Без обеспечения</a></li>
+                            <li><a href="#">С поручителем</a></li>
+                            <li><a href="#">Без поручителя</a></li>
+                            <li><a href="#">Не выходя из дома</a></li>
+                            <li><a href="#">Без страховки</a></li>
+                            <li><a href="#">Без обеспечения</a></li>
+                            <li><a href="#">С поручителем</a></li>
+                            <li><a href="#">Без поручителя</a></li>
+                            <li><a href="#">Не выходя из дома</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="collections__btn">
+                            <span>Показать всё</span>
+                            <span>Скрыть</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="collections__coll">
+                    <div class="collections__caption">По способу выдачи</div>
+                    <div class="collections__box">
+                        <ul>
+                            <li><a href="#">На карту без отказа</a></li>
+                            <li><a href="#">Наличными с плохой КИ</a></li>
+                            <li><a href="#">Наличными онлайн</a></li>
+                            <li><a href="#">На карту</a></li>
+                            <li><a href="#">Наличными по паспорту</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="collections__btn">
+                            <span>Показать всё</span>
+                            <span>Скрыть</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="collections__coll">
+                    <div class="collections__caption">По типу залога</div>
+                    <div class="collections__box">
+                        <ul>
+                            <li><a href="#">Под залог дома</a></li>
+                            <li><a href="#">Под залог авто</a></li>
+                            <li><a href="#">Под залог недвижимости</a></li>
+                            <li><a href="#">Под залог квартиры</a></li>
+                            <li><a href="#">Без залога</a></li>
+                            <li><a href="#">Под залог дома</a></li>
+                            <li><a href="#">Под залог авто</a></li>
+                            <li><a href="#">Под залог недвижимости</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="collections__btn">
+                            <span>Показать всё</span>
+                            <span>Скрыть</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="collections__coll">
+                    <div class="collections__caption">По типу заёмщика</div>
+                    <div class="collections__box">
+                        <ul>
+                            <li><a href="#">Пенсионерам</a></li>
+                            <li><a href="#">Безработным</a></li>
+                            <li><a href="#">Студентам</a></li>
+                            <li><a href="#">С 18 лет</a></li>
+                            <li><a href="#">С 19 лет</a></li>
+                            <li><a href="#">Пенсионерам</a></li>
+                            <li><a href="#">Безработным</a></li>
+                            <li><a href="#">Студентам</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="collections__btn">
+                            <span>Показать всё</span>
+                            <span>Скрыть</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper footer__wrap flex">
+            <div class="footer__left">
+                <div class="footer__row flex">
+                    <nav class="footer__menu">
+                        <ul>
+                            <li><a href="#">Банки</a></li>
+                            <li><a href="#">МФО</a></li>
+                            <li><a href="#">Кредиты</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__menu">
+                        <ul>
+                            <li><a href="#">Кредитный калькулятор</a></li>
+                            <li><a href="#">Кредитные карты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__left-bottom flex">
+                    <div class="footer__copiright">© 2019, Dream Credit</div>
+                    <a href="#" class="footer__confidentiality">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__contacts flex">
+                    <div class="footer__items flex">
+                        <div class="footer__item flex">
+                            <div class="footer__icon img-contain">
+                                <img src="images/footer/phone.svg" alt="">
+                            </div>
+                            <div class="footer__content">
+                                <div class="footer__content-desc">По вопросам сотрудничества обращаться по телефону: </div>
+                                <a href="#" class="footer__content-link">+7 499 113 19 67 </a>
+                            </div>
+                        </div>
+                        <div class="footer__item flex">
+                            <div class="footer__icon img-contain">
+                                <img src="images/footer/location.svg" alt="">
+                            </div>
+                            <div class="footer__content">
+                                <div class="footer__content-desc">Наш адрес:</div>
+                                <address class="footer__content-link">115409 г.Москва, Каширское шоссе 66к2, офис 52 </address>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__vk img-contain">
+                        <img src="images/footer/vk.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__right-bottom">Мы используем файлы cookie для более точной работоспособности сайта. Не являемся банком или кредитной организацией. Помогаем посетителям найти выгодные предложения по банковским продуктам от партнеров. Содержимое сайта не является офертой и носит исключительно справочный характер. </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div id="city-modal" class="city-modal modal" style="display: none;">
+    <div class="modal__closed flex text-small" data-fancybox-close>
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="1.41406" width="2" height="15" rx="1" transform="rotate(-45 0 1.41406)" fill="#FFF"/>
+            <rect x="10.6064" width="2" height="15" rx="1" transform="rotate(45 10.6064 0)" fill="#FFF"/>
+        </svg>
+    </div>
+    <div class="modal__wrap">
+        <div class="modal__title">Выберите ваш город</div>
+        <div class="city-modal__list">
+            <a href="#" class="city-modal__link active">Москва</a>
+            <a href="#" class="city-modal__link">Барнаул</a>
+            <a href="#" class="city-modal__link">Санкт-Петербург</a>
+            <a href="#" class="city-modal__link">Красноярск</a>
+        </div>
+    </div>
+</div><!-- end city-modal -->
+
+<div id="review-modal" class="city-modal modal" style="display: none;">
+    <div class="modal__closed flex text-small" data-fancybox-close>
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="1.41406" width="2" height="15" rx="1" transform="rotate(-45 0 1.41406)" fill="#FFF"/>
+            <rect x="10.6064" width="2" height="15" rx="1" transform="rotate(45 10.6064 0)" fill="#FFF"/>
+        </svg>
+    </div>
+    <div class="modal__wrap">
+        <div class="modal__title">Оставьте ваш отзыв</div>
+        <form action="#" class="modal__form">
+            <input type="text" name="name" class="modal__field field" placeholder="Ваше имя">
+            <input type="text" name="city" class="modal__field field" placeholder="Ваш город">
+            <textarea class="modal__field field" placeholder="Ваш отзыв"></textarea>
+            <button class="modal__btn btn">Отправить</button>
+        </form>
+    </div>
+</div><!-- end city-modal -->
+
+<script src="js/common.js"></script>
+<script src="js/data.js"></script>
+<script src="js/credits.js"></script>
+</body>
+
+</html>
