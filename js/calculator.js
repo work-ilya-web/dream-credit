@@ -308,6 +308,11 @@ $(document).ready(function () {
                 $('input.period').prop('value', period);
                 $('input.period + span').text(plural(period, ['Год', 'Года', 'Лет']));
                 break;
+            
+            case 'days':
+                $('input.period').prop('value', period);
+                $('input.period + span').text(plural(period, ['День', 'Дня', 'Дней']));
+                break;
 
             case 'interest_rate':
                 $('input.interest_rate').prop('value', interest_rate);
