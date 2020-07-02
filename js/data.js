@@ -182,7 +182,7 @@ const microCreditData = [
         },
         period: {
             min: 1,
-            max: 20
+            max: 151
         },
         id: '2',
         bank_name: 'Тинькофф',
@@ -215,7 +215,7 @@ const microCreditData = [
         },
         period: {
             min: 1,
-            max: 30
+            max: 151
         },
         bank_name: 'Альфа',
         id: '1',
