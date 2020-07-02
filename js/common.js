@@ -607,7 +607,32 @@ $(document).ready(function () {
             hide_from_to: true,
             grid: true,
             onStart: function (data) {
-                $input.prop('value', data.from_pretty);
+                 $input.prop('value', data.from_pretty);
+                 if (slider_name == 'days') {
+                     if (data.from_pretty <= 30) {
+                         $input.next('span').text(plural(data.from_pretty, ['День', 'Дня', 'Дней']));
+                     }
+                     if (data.from_pretty > 30 && data.from_pretty <= 60) {
+                         $input.next('span').text('Месяц');
+                         $input.prop('value', 1);
+                     }
+                     if (data.from_pretty > 60 && data.from_pretty <= 90) {
+                         $input.next('span').text('Месяца');
+                         $input.prop('value', 2);
+                     }
+                     if (data.from_pretty > 90 && data.from_pretty <= 120) {
+                         $input.next('span').text('Месяца');
+                         $input.prop('value', 3);
+                     }
+                     if (data.from_pretty > 120 && data.from_pretty <= 150) {
+                         $input.next('span').text('Месяца');
+                         $input.prop('value', 4);
+                     }
+                     if (data.from_pretty == 151) {
+                         $input.next('span').text('Месяцев');
+                         $input.prop('value', 5);
+                     }
+                 }
             },
             onChange: function (data) {
                 $input.prop('value', data.from_pretty);
